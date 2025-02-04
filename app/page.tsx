@@ -23,7 +23,7 @@ export default function Home() {
 
   const addTodo = async (title: string) => {
     const newTodo = {
-      id: Date.now(),
+      id: Date.now().toString(),
       title,
       completed: false,
       createdAt: new Date().toISOString(),

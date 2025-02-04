@@ -27,6 +27,11 @@ export function TodoItem({ todo, onToggle, onDelete }: TodoItemProps) {
         {todo.title}
       </span>
       <div className="flex gap-2 opacity-0 group-hover:opacity-100 transition-opacity">
+        <Link href={`/todo/${todo.id}`}>
+          <Button variant="outline" size="sm">
+            View
+          </Button>
+        </Link>
         <Button
           variant="destructive"
           size="sm"
